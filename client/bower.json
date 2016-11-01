@@ -6,7 +6,7 @@
     "Chakresh Singh"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/ChakreshSinghUC/Assignment2CloudComputing",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular":"*",
+    "angular": "*",
     "angular-route": "^1.5.8",
     "bootstrap": "^3.3.7"
   }

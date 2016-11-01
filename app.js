@@ -12,7 +12,11 @@ Movie = require('./models/movie');
 Genre = require('./models/genre');
 
 //connect to Mongoose
-mongoose.connect('mongodb://127.0.0.1/bollywooddb');
+mongoose.connect('mongodb://52.42.96.27/bollywooddbs', function (err) {
+    if (err) 
+      throw err;
+console.log("Succesfully connected to MongoDB");
+});
 var db = mongoose.connection;
 
 app.get('/',function(req,res){
@@ -20,6 +24,7 @@ app.get('/',function(req,res){
 });
 //MOVIES
 app.get('/api/movie',function(req,res){
+	
 	Movie.getMovies(function(err, movies){
 		if(err){
 				throw err;
@@ -102,7 +107,7 @@ app.delete('api/genre/:._id', function(req, res){
 			res.json(genres);
 	});
 });
+app.listen(1243);
+//Listen on port 1243
+console.log('Running on port 1243...');
 
-//Listen on port 3000
-app.listen(3000);
-console.log('Running on port 3000...');

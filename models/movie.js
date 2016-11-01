@@ -5,6 +5,9 @@ var movieSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
+	genre:{
+                type: String
+        },
 	stars:{
 		type: String
 	},
@@ -23,10 +26,6 @@ var movieSchema = mongoose.Schema({
 	},
 	image_url:{
 		type: String
-	},
-	genre:{
-		type: String,
-		required: true
 	},
 	youtube_url:{
 		type: String

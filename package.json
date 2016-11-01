@@ -6,11 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies":{
-  	"express":"*",
-  	"body-parser":"*",
-  	"mongoose":"*"
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*",
+"http":"*"	
   },
   "author": "Chakresh Singh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChakreshSinghUC/Assignment2CloudComputing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChakreshSinghUC/Assignment2CloudComputing/issues"
+  },
+  "homepage": "https://github.com/ChakreshSinghUC/Assignment2CloudComputing#readme"
 }
